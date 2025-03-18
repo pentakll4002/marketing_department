@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cython debug files
+*.pyd
+*.pyo
+
+# Virtual environment
+.env/
+*.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Python package builds
+dist/
+build/
+*.egg-info/
+
+# Cache and temporary files
+*.swp
+*.swo
+.DS_Store
+
+# Testing and coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+pytest_cache/
+
+# MyPy type checker
+.mypy_cache/
+
+# Pipenv
+Pipfile.lock
+
+# Pyenv
+.python-version
+
+# Docker
+.dockerignore
+
+# AWS Credentials
+.aws/
+
+# Local environment files
+.envrc
+*.secrets
