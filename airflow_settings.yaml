@@ -1,0 +1,25 @@
+# This file allows you to configure Airflow Connections, Pools, and Variables in a single place for local development only.
+# NOTE: json dicts can be added to the conn_extra field as yaml key value pairs. See the example below.
+
+# For more information, refer to our docs: https://www.astronomer.io/docs/astro/cli/develop-project#configure-airflow_settingsyaml-local-development-only
+# For questions, reach out to: https://support.astronomer.io
+# For issues create an issue ticket here: https://github.com/astronomer/astro-cli/issues
+
+airflow:
+  connections:
+    - conn_id: aws_default
+      conn_type: aws
+      login: "{{ env.AWS_ACCESS_KEY_ID }}"
+      password: "{{ env.AWS_SECRET_ACCESS_KEY }}"
+      extra: '{"region_name": "ap-southeast-1"}'
+
+    - conn_id: mlflow_tracking
+      conn_type: http
+      host: "http://mlflow:5000"
+
+  variables:
+    - key: S3_BUCKET
+      value: "mlflow-artifacts"
+    - key: POSTGRES_URI
+      value: "postgresql://user:pwd@rds.amazonaws.com:5432/mlflow"
+
