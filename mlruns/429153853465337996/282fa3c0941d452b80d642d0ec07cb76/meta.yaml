@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/marketing-department/marketing_department/mlruns/429153853465337996/282fa3c0941d452b80d642d0ec07cb76/artifacts
+end_time: 1764839301680
+entry_point_name: ''
+experiment_id: '429153853465337996'
+lifecycle_stage: active
+run_id: 282fa3c0941d452b80d642d0ec07cb76
+run_name: kmeans_pipeline
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764839293342
+status: 3
+tags: []
+user_id: dangt
